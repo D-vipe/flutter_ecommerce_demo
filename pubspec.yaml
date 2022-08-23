@@ -59,6 +59,7 @@ flutter:
   assets:
     - assets/app_icons/
     - assets/images/
+    - assets/icons/
 
   fonts:
     - family: MarkPro

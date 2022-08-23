@@ -7,37 +7,39 @@ import 'package:flutter/material.dart';
 
 class AppTheme {
   static ThemeData lightTheme() => ThemeData(
-        canvasColor: AppColors.white,
+        canvasColor: AppColors.background,
         colorScheme: const ColorScheme(
           brightness: Brightness.light,
           primary: AppColors.orange,
           onPrimary: AppColors.white,
           error: AppColors.errorRed,
           onError: AppColors.errorRed,
-          background: AppColors.white,
-          onBackground: AppColors.black,
+          background: AppColors.dark,
+          onBackground: AppColors.white,
           surface: AppColors.white,
           onSurface: AppColors.black,
           onSecondary: AppColors.white,
-          secondary: AppColors.background,
+          secondary: AppColors.orange,
         ),
         appBarTheme: AppBarTheme(
           backgroundColor: AppColors.white,
           centerTitle: true,
           titleTextStyle:
-              AppTextStyle.comforta14W400.apply(color: AppColors.black),
+              AppTextStyle.markPro14W400.apply(color: AppColors.black),
           iconTheme: const IconThemeData(color: AppColors.orange),
           actionsIconTheme: const IconThemeData(color: AppColors.orange),
         ),
         bottomAppBarTheme: const BottomAppBarTheme(
-          color: AppColors.white,
-          elevation: 3,
+          color: AppColors.dark,
+          elevation: 0,
           shape: CircularNotchedRectangle(),
         ),
         bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-          elevation: 3,
+          type: BottomNavigationBarType.fixed,
+          backgroundColor: AppColors.transparent,
+          elevation: 0,
           unselectedIconTheme: IconThemeData(
-            color: AppColors.dark,
+            color: AppColors.white,
             size: 25,
           ),
           selectedIconTheme: IconThemeData(
@@ -45,14 +47,13 @@ class AppTheme {
             size: 35,
           ),
           showUnselectedLabels: false,
-          unselectedLabelStyle: TextStyle(color: AppColors.dark),
-          // selectedLabelStyle: TextStyle(color: AppColors.blue),
+          unselectedLabelStyle: TextStyle(color: AppColors.white),
+          selectedLabelStyle: TextStyle(color: AppColors.white),
         ),
         outlinedButtonTheme: OutlinedButtonThemeData(
           style: OutlinedButton.styleFrom(
             // backgroundColor: AppColors.blue,
-            textStyle:
-                AppTextStyle.comforta16W400.apply(color: AppColors.white),
+            textStyle: AppTextStyle.markPro16W400.apply(color: AppColors.white),
           ),
         ),
         floatingActionButtonTheme: const FloatingActionButtonThemeData(

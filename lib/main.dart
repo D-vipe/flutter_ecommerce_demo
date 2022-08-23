@@ -1,4 +1,5 @@
 import 'package:ecommerce_demo/app/config/app_router.dart';
+import 'package:ecommerce_demo/app/config/path.dart';
 import 'package:ecommerce_demo/app/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -18,6 +19,7 @@ void main() async {
   // }
 
   await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+  AppRouter.setupRouter();
   runApp(MyApp());
 }
 
@@ -55,8 +57,8 @@ class MyApp extends StatelessWidget {
         GlobalMaterialLocalizations.delegate,
       ],
       theme: AppTheme.lightTheme(),
+      initialRoute: Routes.home,
       onGenerateRoute: AppRouter.router.generator,
-      initialRoute: '/',
     );
   }
 }
