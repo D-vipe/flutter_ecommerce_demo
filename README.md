@@ -2,15 +2,9 @@
 
 ecommerce demo app
 
-## Getting Started
+### Plugin commands
+1. flutter pub run flutter_launcher_icons:main  #to rebuild launcher icons
+2. flutter pub run flutter_native_splash:create #to rebuild assets for splash screen if there are any changes to assets
+3. spider build #to build icon / image resources
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+for more info relate to package sites
